@@ -1,0 +1,12 @@
+#dashboard-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 300px; /* Sidebar width */
+}
+
+#calendar-widget {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
+}

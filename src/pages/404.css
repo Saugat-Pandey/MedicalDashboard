@@ -1,0 +1,9 @@
+#notFound-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure the container takes full width */
+    min-height: 100vh; /* Ensure the container takes full height of the viewport */
+}

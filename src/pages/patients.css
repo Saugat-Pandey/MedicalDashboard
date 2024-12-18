@@ -1,0 +1,5 @@
+#patients-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 300px; /* Sidebar width */
+}

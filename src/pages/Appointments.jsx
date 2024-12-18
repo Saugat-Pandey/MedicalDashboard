@@ -1,9 +1,10 @@
 import React from 'react';
+import './Appointments.css';
 import Sidebar from '../components/Sidebar';
 
 function Appointments() {
     return (
-        <div>
+        <div id={"appointments-container"}>
             <Sidebar/>
             <h1>Appointments Page</h1>
             {/* Add content for the Appointments page here */}
