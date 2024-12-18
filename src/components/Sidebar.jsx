@@ -1,6 +1,7 @@
 /*import React from 'react';*/
 import './Sidebar.css';  // Import the CSS for the sidebar
 import doctorImage from '/src/assets/doctor.jpeg';
+import Button from "./Button.jsx";
 
 function Sidebar() {
     return (
@@ -14,10 +15,10 @@ function Sidebar() {
             {/* Navigation Buttons */}
             <nav className="nav-links">
             <ul>
-                    <li><button className="nav-button">Dashboard</button></li>
-                    <li><button className="nav-button">Patients</button></li>
-                    <li><button className="nav-button">Appointments</button></li>
-                    <li><button className="nav-button">Settings</button></li>
+                    <li><Button className="nav-button">Dashboard</Button></li>
+                    <li><Button className="nav-button">Patients</Button></li>
+                    <li><Button className="nav-button">Appointments</Button></li>
+                    <li><Button className="nav-button">Settings</Button></li>
                 </ul>
             </nav>
         </aside>
