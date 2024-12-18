@@ -1,12 +1,15 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
-export default function Button({ children }) {
+export default function Button({ children, className, to }) {
+    const navigate = useNavigate();
+
     function handleClick() {
-        alert('You clicked me!');
+        navigate(to);
     }
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className={className}>
             {children}
         </button>
     );

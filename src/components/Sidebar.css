@@ -41,12 +41,12 @@ h3 {
 }
 
 .nav-button {
-    width: 150%;
+    width: 100%; /* Adjust width to fit the container */
     padding: 10px;
     text-align: left;
     background-color: transparent;
     color: black;
-    border: #cb14d8;
+    border: none; /* Remove border */
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;

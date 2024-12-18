@@ -14,11 +14,11 @@ function Sidebar() {
 
             {/* Navigation Buttons */}
             <nav className="nav-links">
-            <ul>
-                    <li><Button className="nav-button">Dashboard</Button></li>
-                    <li><Button className="nav-button">Patients</Button></li>
-                    <li><Button className="nav-button">Appointments</Button></li>
-                    <li><Button className="nav-button">Settings</Button></li>
+                <ul>
+                    <li><Button className="nav-button" to="/">Dashboard</Button></li>
+                    <li><Button className="nav-button" to="/patients">Patients</Button></li>
+                    <li><Button className="nav-button" to="/appointments">Appointments</Button></li>
+                    <li><Button className="nav-button" to="/settings">Settings</Button></li>
                 </ul>
             </nav>
         </aside>
