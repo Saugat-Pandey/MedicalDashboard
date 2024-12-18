@@ -1,6 +1,6 @@
 /*import React from 'react';*/
-import './components/Sidebar.css';  // Import the CSS for the sidebar
-import doctorImage from './assets/doctor.jpeg';
+import './Sidebar.css';  // Import the CSS for the sidebar
+import doctorImage from '/src/assets/doctor.jpeg';
 
 function Sidebar() {
     return (
