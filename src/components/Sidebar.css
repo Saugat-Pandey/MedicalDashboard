@@ -1,0 +1,57 @@
+.sidebar {
+    position: fixed; /* Fix it to the viewport */
+    left: 0; /* Align it to the left edge */
+    top: 0; /* Align it to the top edge */
+    height: 100vh; /* Full height */
+    width: 250px; /* Fixed width */
+    background-color: skyblue; /* Sidebar background color */
+    color: black; /* Text color */
+    display: flex; /* Flex layout for inner items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Inner padding */
+}
+
+.doctor-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doctor-image {
+    width: 80px; /* Adjust the size of the image */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.nav-button {
+    width: 150%;
+    padding: 10px;
+    text-align: left;
+    background-color: transparent;
+    color: black;
+    border: #cb14d8;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0a62ba; /* Darker shade when hovered */
+}
