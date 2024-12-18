@@ -1,32 +1,38 @@
 .sidebar {
-    position: fixed; /* Fix it to the viewport */
-    left: 0; /* Align it to the left edge */
-    top: 0; /* Align it to the top edge */
-    height: 100vh; /* Full height */
-    width: 250px; /* Fixed width */
-    background-color: skyblue; /* Sidebar background color */
-    color: black; /* Text color */
-    display: flex; /* Flex layout for inner items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Inner padding */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #a8def0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
 }
 
 .doctor-profile {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    width: 100%;
 }
 
-.doctor-image {
-    width: 80px; /* Adjust the size of the image */
-    height: 200px;
-    border-radius: 50%; /* Makes the image circular */
-    margin-bottom: 10px;
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.2rem;
+    color: #000;
     margin: 0;
+}
+
+.nav-links {
+    width: 95%;
 }
 
 .nav-links ul {
@@ -37,21 +43,29 @@ h3 {
 
 .nav-links li {
     width: 100%;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .nav-button {
-    width: 100%; /* Adjust width to fit the container */
-    padding: 10px;
-    text-align: left;
-    background-color: transparent;
-    color: black;
-    border: none; /* Remove border */
-    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-    background-color: #0a62ba; /* Darker shade when hovered */
+    background-color: #666;
+}
+
+.divider {
+    border: none;
+    height: 5px;
+    background-color: white;
+    margin: 10px 0;
+    width: 100%;
 }

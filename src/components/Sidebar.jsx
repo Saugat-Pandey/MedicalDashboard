@@ -8,9 +8,12 @@ function Sidebar() {
         <aside className="sidebar">
             {/* Doctor's Picture */}
             <div className="doctor-profile">
-                <img src={doctorImage} alt="Doctor" style={{width: '150px', borderRadius: '100%'}}/>
+                <img src={doctorImage} alt="Doctor" className="profile-image"/>
                 <h3>Dr. Mustermann</h3>
             </div>
+
+            {/* Divider Line */}
+            <hr className="divider" />
 
             {/* Navigation Buttons */}
             <nav className="nav-links">
