@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 260px;
 }
 
 #dashboard-container > *:not(.sidebar) {
@@ -9,8 +10,5 @@
     width: 100%;
     margin: 10px; /* Add a small gap */
     border: 1px solid white; /* Add a white border */
-}
-
-#calendar-widget {
-
+    max-width: 500px; /* Limit the width */
 }

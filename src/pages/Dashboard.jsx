@@ -10,8 +10,7 @@ function Dashboard() {
         <div id={"dashboard-container"}>
             <Sidebar/>
             <CurrentDayPatients number={20}/>
-            <div id={"calendar-widget"}><Calendar/></div>
-
+            <Calendar/>
         </div>
     );
 }
