@@ -1,12 +1,16 @@
 #dashboard-container {
     display: flex;
-    align-items: flex-start;
-    margin-left: 300px; /* Sidebar width */
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboard-container > *:not(.sidebar) {
+    flex: 1; /* Other elements take the remaining space */
+    width: 100%;
+    margin: 10px; /* Add a small gap */
+    border: 1px solid white; /* Add a white border */
 }
 
 #calendar-widget {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 0;
+
 }

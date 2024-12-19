@@ -1,4 +1,4 @@
-/*import React from 'react';*/
+import React from 'react';
 import './Sidebar.css';  // Import the CSS for the sidebar
 import doctorImage from '/src/assets/doctor.jpeg';
 import Button from "./Button.jsx";
