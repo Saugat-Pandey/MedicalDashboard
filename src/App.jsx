@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './components/Sidebar.css';
 import Dashboard from './pages/Dashboard.jsx';
-import Sidebar from './components/Sidebar.jsx';
 import Patients from './pages/Patients.jsx';
 import Appointments from './pages/Appointments.jsx';
 import NotFound from './pages/404.jsx'; 
