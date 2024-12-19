@@ -3,13 +3,13 @@ import { BarChart } from '@mui/x-charts/BarChart';
 
 const pData = [24, 13, 38, 29, 28, 12, 0];
 const xLabels = [
-    'Montag',
-    'Dienstag',
-    'Mittwoch',
-    'Donnerstag',
-    'Freitag',
-    'Samstag',
-    'Sonntag',
+    'Mo',
+    'Di',
+    'Mi',
+    'Do',
+    'Fr',
+    'Sa',
+    'So',
 ];
 
 export default function SimpleBarChart() {

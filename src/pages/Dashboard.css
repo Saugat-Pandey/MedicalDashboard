@@ -12,3 +12,7 @@
     border: 1px solid white; /* Add a white border */
     max-width: 500px; /* Limit the width */
 }
+
+#barChartWeekPatients {
+    background-color: #a8def0;
+}

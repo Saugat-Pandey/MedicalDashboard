@@ -13,7 +13,7 @@ function Dashboard() {
             <Sidebar/>
             <CurrentDayPatients number={20}/>
             <Calendar/>
-            <TinyBarChart/>
+            <div id={"barChartWeekPatients"}><TinyBarChart/></div>
         </div>
     );
 }
