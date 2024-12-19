@@ -1,4 +1,4 @@
-/*import React from 'react';*/
+import React from 'react';
 import './Sidebar.css';  // Import the CSS for the sidebar
 import doctorImage from '/src/assets/doctor.jpeg';
 import Button from "./Button.jsx";
@@ -18,10 +18,10 @@ function Sidebar() {
             {/* Navigation Buttons */}
             <nav className="nav-links">
                 <ul>
-                    <li><Button className="nav-button" to="/">Dashboard</Button></li>
-                    <li><Button className="nav-button" to="/patients">Patients</Button></li>
-                    <li><Button className="nav-button" to="/appointments">Appointments</Button></li>
-                    <li><Button className="nav-button" to="/settings">Settings</Button></li>
+                    <li><Button className="nav-button" to="/" button_text="Dashboard"></Button></li>
+                    <li><Button className="nav-button" to="/patients" button_text="Patients"></Button></li>
+                    <li><Button className="nav-button" to="/appointments" button_text="Appointments"></Button></li>
+                    <li><Button className="nav-button" to="/settings" button_text="Settings"></Button></li>
                 </ul>
             </nav>
         </aside>

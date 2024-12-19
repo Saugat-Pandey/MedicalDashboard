@@ -1,0 +1,13 @@
+#notFound-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Volle Breite des Viewports */
+    text-align: center; /* Centers text */
+}
+
+#backToDashboard-button {
+    max-width: 30%;
+}
