@@ -7,3 +7,7 @@
     width: 100vw; /* Volle Breite des Viewports */
     text-align: center; /* Centers text */
 }
+
+#backToDashboard-button {
+    max-width: 30%;
+}

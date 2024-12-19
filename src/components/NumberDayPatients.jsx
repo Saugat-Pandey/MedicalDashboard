@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import './CurrentDayPatients.css'
+import './NumberDayPatients.css'
 
-export default function CurrentDayPatients({number}) {
+export default function NumberDayPatients({number}) {
     return (
         <div id={"currentDayPatients"}>
             <h2>Today&apos;s Patients</h2>
@@ -10,6 +10,6 @@ export default function CurrentDayPatients({number}) {
     );
 }
 
-CurrentDayPatients.propTypes = {
+NumberDayPatients.propTypes = {
     number: PropTypes.number.isRequired
 }
