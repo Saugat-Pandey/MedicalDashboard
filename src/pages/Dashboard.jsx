@@ -4,6 +4,8 @@ import Sidebar from '../components/Sidebar';
 import Calendar from 'react-calendar'
 import '/src/components/Calendar.css';
 import CurrentDayPatients from "../components/CurrentDayPatients.jsx";
+import TinyBarChart from '../components/BarChart.jsx';
+
 
 function Dashboard() {
     return (
@@ -11,6 +13,7 @@ function Dashboard() {
             <Sidebar/>
             <CurrentDayPatients number={20}/>
             <Calendar/>
+            <TinyBarChart/>
         </div>
     );
 }
