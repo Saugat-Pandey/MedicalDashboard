@@ -1,5 +1,9 @@
 
 #nextPatientDetails {
+    position: fixed;
+    right: 150px;
+    top: 0;
+
     text-align: center;
     margin-top: 20px;
     background-color: #a8def0;
