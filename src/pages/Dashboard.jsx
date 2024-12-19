@@ -5,7 +5,7 @@ function Dashboard() {
     return (
         <div>
             <Sidebar/>
-            <h1>Welcome to the Dashboard</h1>            
+            <h1>Welcome to the Dashboard</h1>
             {/* Add content for the Dashboard page here */}
         </div>
     );
