@@ -2,4 +2,88 @@
     display: flex;
     align-items: flex-start;
     margin-left: 300px; /* Sidebar width */
+    background-color: #e0f7fa; /* Light blue background */
+    height: 100vh; /* Full viewport height */
+    padding: 0;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box;
+}
+
+.appointments-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure full height of the container */
+    width: 100%; /* Ensure it takes up full width of the container */
+    overflow: hidden; /* Hide any overflow that causes horizontal scrolling */
+}
+
+.appointments-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.appointments-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    flex: 1; /* Ensures the table fills remaining space vertically */
+    width: 100%; /* Ensure the table takes up the full horizontal space */
+    max-height: 80vh; /* Prevent the table from growing too tall */
+    table-layout: fixed; /* Fix column widths to prevent dynamic resizing */
+}
+
+.appointments-header,
+.appointments-row {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr; /* Adjust column sizes to reduce space */
+    align-items: center;
+    font-size: 16px;
+    width: 100%; /* Ensure each row takes up the full width of the table */
+}
+
+.appointments-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    font-weight: bold;
+    background-color: #00796b; /* Accent color for the header */
+    color: white; /* White text in header */
+    padding-left: 10px; /* Padding for alignment */
+}
+
+.appointments-row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.column-name,
+.column-time,
+.column-reason {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.column-name {
+    max-width: 300px; /* Adjust this value as needed */
+    white-space: nowrap; /* Prevents long names from breaking to next line */
+}
+
+.column-time,
+.column-reason {
+    max-width: 150px; /* Adjust this value as needed */
+    text-align: center;
+    padding: 0 10px; /* Adds some padding for alignment without excessive space */
+}
+
+.appointments-row,
+.appointments-header {
+    word-wrap: break-word; /* Prevents text from overflowing */
 }
