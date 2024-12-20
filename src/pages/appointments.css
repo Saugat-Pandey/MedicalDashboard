@@ -5,7 +5,7 @@
     background-color: #e0f7fa; /* Light blue background */
     height: 100vh; /* Full viewport height */
     padding: 0;
-    width: 100vw; /* Full viewport width */
+    width: calc(100vw - 300px);; /* Full viewport width */
     box-sizing: border-box;
 }
 
