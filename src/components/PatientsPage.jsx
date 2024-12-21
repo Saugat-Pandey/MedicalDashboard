@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './PatientsPage.css';
 
 function PatientTable() {
     const [patients, setPatients] = useState([
@@ -11,7 +12,7 @@ function PatientTable() {
     ]);
 
     return (
-        <div>
+        <div className="patients-page-container">
             <table>
                 <thead>
                 <tr>

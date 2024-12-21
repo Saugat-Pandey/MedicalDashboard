@@ -4,7 +4,7 @@
     margin-left: 300px; /* Sidebar width */
     background-color: #e0f7fa; /* Light blue background */
     height: 100vh; /* Full viewport height */
-    padding: 0;
+    padding: 10px;
     width: calc(100vw - 300px);; /* Full viewport width */
     box-sizing: border-box;
 }
