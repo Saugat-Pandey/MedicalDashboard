@@ -2,12 +2,12 @@
 .patients-page-container div {
     padding: 10px;
     margin: 0;
-    max-width: 100%;
+    max-width: 200%;
     width: 100%;
 }
 
 .patients-page-container table {
-    width: 75%;
+    width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
     margin-left: 0;
