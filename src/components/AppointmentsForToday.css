@@ -5,3 +5,7 @@
     background-color: #a8def0;
     color: black;
 }
+
+#seeAll-button {
+    max-width: 50%;
+}

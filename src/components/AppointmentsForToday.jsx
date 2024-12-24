@@ -19,7 +19,7 @@ export default function AppointmentsForToday() {
             <p>Text Text Text</p>
             <p>Text Text Text</p>
             <p>Text Text Text</p>
-            <Button className="nav-button" to="/appointments" button_text="See all"></Button>
+            <Button className="seeAll-button" to="/appointments" button_text="See all"></Button>
         </div>
     );
 }
