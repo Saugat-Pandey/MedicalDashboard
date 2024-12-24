@@ -8,6 +8,7 @@ import Patients from './pages/Patients.jsx';
 import Appointments from './pages/Appointments.jsx';
 import NotFound from './pages/404.jsx';
 import PatientTable from './components/PatientsPage.jsx';
+import PatientsDetailPage from "./pages/PatientsDetailPage.jsx";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Route path="/dashboard" element={<Dashboard/>}/>
                         <Route path="/patients" element={<Patients/>}/>
                         <Route path="/appointments" element={<Appointments/>}/>
+                        <Route path="/patients-detail" element={<PatientsDetailPage/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </div>
