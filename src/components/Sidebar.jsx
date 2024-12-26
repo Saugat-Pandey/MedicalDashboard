@@ -2,14 +2,15 @@ import React from 'react';
 import './Sidebar.css';  // Import the CSS for the sidebar
 import doctorImage from '/src/assets/doctor.jpeg';
 import Button from "./Button.jsx";
+import PropTypes from 'prop-types';
 
-function Sidebar() {
+function Sidebar({ name = "Dr. Mustermann", image = doctorImage }) {
     return (
         <aside className="sidebar">
             {/* Doctor's Picture */}
             <div className="doctor-profile">
-                <img src={doctorImage} alt="Doctor" className="profile-image"/>
-                <h3>Dr. Mustermann</h3>
+                <img src={image} alt="profile-image" className="profile-image"/>
+                <h3>{name}</h3>
             </div>
 
             {/* Divider Line */}
@@ -27,5 +28,10 @@ function Sidebar() {
         </aside>
     );
 }
+
+Sidebar.propTypes = {
+    name: PropTypes.string,
+    image: PropTypes.string
+};
 
 export default Sidebar;

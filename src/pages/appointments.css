@@ -20,7 +20,7 @@
     flex-direction: column;
     height: 100%; /* Ensure full height of the container */
     width: 100%; /* Ensure it takes up full width of the container */
-    overflow-x: hidden; /* Hide any overflow that causes horizontal scrolling */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .appointments-content h1 {
