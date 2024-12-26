@@ -2,11 +2,11 @@ import React from 'react';
 import Sidebar from "../components/Sidebar.jsx";
 import './PatientsDetailPage.css';
 
-
 function PatientsDetailPage() {
     return (
         <div className="container">
-            <div className="Sidebar"><Sidebar name="Selma Lepka"/></div>
+            <div className="Sidebar"><Sidebar name="Selma Lepka" image="/src/assets/selma.jpg"
+                                              className="sidebarPatient"/></div>
             <div className="PreviousNote">
                 <h1>Notizen</h1>
                 <p>Text Text Text</p>
@@ -26,7 +26,6 @@ function PatientsDetailPage() {
                                 <td>Birthday: 02.02.2004</td>
                                 <td>Gender: Female</td>
                                 <td>Last Visit: 12.08.2024</td>
-
                             </tr>
                             <tr>
                                 <td>Weight: 70kg</td>
@@ -48,10 +47,6 @@ function PatientsDetailPage() {
                     <p>Current Medication</p>
                     <p>Text Text Text </p>
                 </div>
-                <div className="PatientImage">
-                    <img src="/src/assets/selma.jpg" alt="Selma Lepka" className="profile-image"/>
-                </div>
-
                 <div className="Timeline">
                     <img src="/src/assets/placeholder_timeline.png" alt="Timeline" className="timeline-image"/>
                 </div>

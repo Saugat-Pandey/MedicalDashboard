@@ -1,4 +1,3 @@
-
 .PreviousNote, .NewNote, .PatientMainContent, .PatientInfos, .Timeline, .PatientImage, .PatientHead, .PatientName, .PatientGeneral {
   /* border: 1px solid black;  Add border for visualization debugging */
 }
@@ -31,15 +30,16 @@
 
 .NewNote { grid-area: NewNote; }
 
-.PatientMainContent {  display: grid;
-  grid-template-columns: 1.5fr 0.5fr 1fr;
+.PatientMainContent {  
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr; /* Adjusted column widths */
   grid-template-rows: 0.5fr 1.6fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "PatientHead PatientImage PatientInfos"
-    "Timeline Timeline PatientInfos"
-    "Timeline Timeline PatientInfos";
+    "PatientHead PatientInfos"
+    "Timeline PatientInfos"
+    "Timeline PatientInfos";
   grid-area: PatientMainContent;
 }
 
@@ -47,22 +47,16 @@
 
 .Timeline { grid-area: Timeline; }
 
-.PatientImage { grid-area: PatientImage; display: flex; justify-content: flex-start; /* Align to the left */ align-items: center; /* Center vertically */ }
-
-.PatientImage .profile-image {
-  display: block;
-  margin: 0; /* Remove margin */
-}
-
-.PatientHead {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.PatientHead {  
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjusted column widths */
   grid-template-rows: 0.3fr 0.2fr 0.5fr; /* Further adjusted row heights */
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "PatientName PatientName PatientName"
-    "PatientGeneral PatientGeneral PatientGeneral"
-    "PatientGeneral PatientGeneral PatientGeneral";
+    "PatientName PatientName"
+    "PatientGeneral PatientGeneral"
+    "PatientGeneral PatientGeneral";
   grid-area: PatientHead;
 }
 
