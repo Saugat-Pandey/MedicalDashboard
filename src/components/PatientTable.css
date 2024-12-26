@@ -35,3 +35,7 @@
 .patients-page-container tbody tr:hover {
     background-color: #adc687;
 }
+
+.selma-lepka-row {
+    cursor: pointer;
+}

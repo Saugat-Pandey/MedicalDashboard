@@ -2,12 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './components/Sidebar.css';
-import './components/PatientsPage.css';
+import './components/PatientTable.css';
 import Dashboard from './pages/Dashboard.jsx';
 import Patients from './pages/Patients.jsx';
 import Appointments from './pages/Appointments.jsx';
 import NotFound from './pages/404.jsx';
-import PatientTable from './components/PatientsPage.jsx';
 import PatientsDetailPage from "./pages/PatientsDetailPage.jsx";
 
 function App() {

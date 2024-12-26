@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './PatientsPage.css';
+import { useNavigate } from 'react-router-dom';
+import './PatientTable.css';
 
 function PatientTable() {
     const [patients, setPatients] = useState([
@@ -10,6 +11,14 @@ function PatientTable() {
         { PID: 900, FullName: "Saugat Pandey", Sex: "Male", DoB: "02.09.2001", Insurance: "AOK", LastVisit: "12.09.2022" },
         { PID: 111, FullName: "Ghazal Ghazemi", Sex: "Female", DoB: "02.09.2000", Insurance: "TK", LastVisit: "12.12.2021" },
     ]);
+
+    const navigate = useNavigate();
+
+    const handleRowClick = (patient) => {
+        if (patient.FullName === "Selma Lepka") {
+            navigate('/patients-detail');
+        }
+    };
 
     return (
         <div className="patients-page-container">
@@ -26,7 +35,9 @@ function PatientTable() {
                 </thead>
                 <tbody>
                 {patients.map((patient, index) => (
-                    <tr key={index}>
+                    <tr key={index} onClick={() => handleRowClick(patient)}
+                        className={patient.FullName === "Selma Lepka" ? "selma-lepka-row" : ""}
+                    >
                         <td>{patient.PID}</td>
                         <td>{patient.FullName}</td>
                         <td>{patient.Sex}</td>
