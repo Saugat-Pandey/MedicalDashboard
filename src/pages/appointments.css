@@ -7,6 +7,7 @@
     padding: 10px;
     width: calc(100vw - 300px);; /* Full viewport width */
     box-sizing: border-box;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .appointments-content {
@@ -19,7 +20,7 @@
     flex-direction: column;
     height: 100%; /* Ensure full height of the container */
     width: 100%; /* Ensure it takes up full width of the container */
-    overflow: hidden; /* Hide any overflow that causes horizontal scrolling */
+    overflow-x: hidden; /* Hide any overflow that causes horizontal scrolling */
 }
 
 .appointments-content h1 {
@@ -39,6 +40,7 @@
     width: 100%; /* Ensure the table takes up the full horizontal space */
     max-height: 80vh; /* Prevent the table from growing too tall */
     table-layout: fixed; /* Fix column widths to prevent dynamic resizing */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .appointments-header,
