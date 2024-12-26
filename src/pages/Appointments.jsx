@@ -29,7 +29,7 @@ function Appointments() {
                         <div key={index} className="appointments-row">
                             <span className="column-image">
                                 <img
-                                    src={require(`../assets/${appointment.image}`)}
+                                    src={`/src/assets/${appointment.image}`}
                                     alt={appointment.name}
                                     className="profile-image"
                                 />
