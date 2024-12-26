@@ -6,8 +6,8 @@ import './PatientsDetailPage.css';
 
 function PatientsDetailPage() {
     return (
-        <div id={"patientsDetailPageContainer"}>
-            <Sidebar/>
+        <div className="patientsDetailPageContainer">
+            <Sidebar name='Selma Lepka' image='/src/assets/selma.jpg'/>
             <h1>Grid für Layout anlegen - PatientDetailPage</h1>
         </div>
     );
