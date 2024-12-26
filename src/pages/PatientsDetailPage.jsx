@@ -17,11 +17,27 @@ function PatientsDetailPage() {
                 <button>Speichern</button>
             </div>
             <div className="PatientMainContent">
-                <div className="PatientName">
-                    <h1>Selma Lepka</h1>
-                </div>
-                <div className="PatientImage">
-                    <img src="/src/assets/selma.jpg" alt="Selma Lepka" className="profile-image"/>
+                <div className="PatientHead">
+                    <div className="PatientName">
+                        <h1>Selma Lepka</h1>
+                    </div>
+                    <div className="PatientGeneral">
+                        <table id={"patientGeneralTable"}>
+                            <tbody>
+                            <tr>
+                                <td>Birthday: 02.02.2004</td>
+                                <td>Gender: Female</td>
+                                <td>Last Visit: 12.08.2024</td>
+
+                            </tr>
+                            <tr>
+                                <td>Weight: 70kg</td>
+                                <td>Height: 166cm</td>
+                                <td>Insurance: TK</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div className="PatientInfos">
                     <h1>infos, allergien etc. </h1>
@@ -34,6 +50,10 @@ function PatientsDetailPage() {
                     <p>Current Medication</p>
                     <p>Text Text Text </p>
                 </div>
+                <div className="PatientImage">
+                    <img src="/src/assets/selma.jpg" alt="Selma Lepka" className="profile-image"/>
+                </div>
+
                 <div className="Timeline">
                     <h1>Timeline</h1>
                 </div>
@@ -43,3 +63,4 @@ function PatientsDetailPage() {
 }
 
 export default PatientsDetailPage;
+

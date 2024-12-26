@@ -10,22 +10,17 @@
   height: 900px;
 }
 
-.Sidebar {
-  grid-area: Sidebar;
-  width: 300px;
-}
-
 .PreviousNote { grid-area: PreviousNote; }
 
 .NewNote { grid-area: NewNote; }
 
 .PatientMainContent {  display: grid;
-  grid-template-columns: 1.3fr 0.7fr 1fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr 1fr;
+  grid-template-rows: 0.8fr 1.3fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "PatientName PatientImage PatientInfos"
+    "PatientHead PatientImage PatientInfos"
     "Timeline Timeline PatientInfos"
     "Timeline Timeline PatientInfos";
   grid-area: PatientMainContent;
@@ -35,6 +30,26 @@
 
 .Timeline { grid-area: Timeline; }
 
+.PatientImage { grid-area: PatientImage; }
+
+.PatientHead {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "PatientName PatientName PatientName"
+    "PatientGeneral PatientGeneral PatientGeneral"
+    "PatientGeneral PatientGeneral PatientGeneral";
+  grid-area: PatientHead;
+}
+
 .PatientName { grid-area: PatientName; }
 
-.PatientImage { grid-area: PatientImage; }
+.PatientGeneral { grid-area: PatientGeneral; }
+
+.Sidebar { grid-area: Sidebar; }
+
+#patientGeneralTable td {
+  padding-right: 80px;
+}
