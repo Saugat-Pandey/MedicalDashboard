@@ -8,13 +8,11 @@ function PatientsDetailPage() {
         <div className="container">
             <div className="Sidebar"><Sidebar name="Selma Lepka"/></div>
             <div className="PreviousNote">
-                <h1>Notiz 1</h1>
+                <h1>Notizen</h1>
                 <p>Text Text Text</p>
             </div>
             <div className="NewNote">
                 <h1>Neue Notiz</h1>
-                <textarea></textarea>
-                <button>Speichern</button>
             </div>
             <div className="PatientMainContent">
                 <div className="PatientHead">
@@ -55,7 +53,7 @@ function PatientsDetailPage() {
                 </div>
 
                 <div className="Timeline">
-                    <h1>Timeline</h1>
+                    <img src="/src/assets/placeholder_timeline.png" alt="Timeline" className="timeline-image"/>
                 </div>
             </div>
         </div>

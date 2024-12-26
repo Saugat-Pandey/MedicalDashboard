@@ -25,6 +25,15 @@
     border-radius: 50%;
 }
 
+.doctor-profile .profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto; /* Center the image in the sidebar */
+}
+
 h3 {
     font-size: 1.2rem;
     color: #000;
