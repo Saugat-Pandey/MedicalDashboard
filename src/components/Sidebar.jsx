@@ -4,13 +4,30 @@ import doctorImage from '/src/assets/doctor.jpeg';
 import Button from "./Button.jsx";
 import PropTypes from 'prop-types';
 
-function Sidebar({ name = "Dr. Mustermann", image = doctorImage }) {
+function Sidebar({ name = ""}) {
+    let content = null;
+
+    if (name === "Selma Lepka") {
+        content = (
+            <>
+                <hr className="divider" />
+
+                <p>Birthday: </p>
+                <p>Gender: </p>
+                <p>Weight: </p>
+                <p>Height: </p>
+                <p>Insurance: </p>
+                <p>Last Visit: </p>
+            </>
+        );
+    }
+
     return (
         <aside className="sidebar">
             {/* Doctor's Picture */}
             <div className="doctor-profile">
-                <img src={image} alt="profile-image" className="profile-image"/>
-                <h3>{name}</h3>
+                <img src={doctorImage} alt="profile-image" className="profile-image"/>
+                <h3>{"Dr. Mustermann"}</h3>
             </div>
 
             {/* Divider Line */}
@@ -25,6 +42,8 @@ function Sidebar({ name = "Dr. Mustermann", image = doctorImage }) {
                     <li><Button className="nav-button" to="/settings" button_text="Settings"></Button></li>
                 </ul>
             </nav>
+
+            {content}
         </aside>
     );
 }

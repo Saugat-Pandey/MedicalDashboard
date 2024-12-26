@@ -6,7 +6,7 @@ import './PatientsDetailPage.css';
 function PatientsDetailPage() {
     return (
         <div className="container">
-            <div className="Sidebar"><Sidebar/></div>
+            <div className="Sidebar"><Sidebar name="Selma Lepka"/></div>
             <div className="PreviousNote">
                 <h1>Notiz 1</h1>
                 <p>Text Text Text</p>
@@ -26,9 +26,13 @@ function PatientsDetailPage() {
                 <div className="PatientInfos">
                     <h1>infos, allergien etc. </h1>
                     <p>Allergies</p>
-                    <p>Birthdate</p>
+                    <p>Text Text Text </p>
+                    <p>Text Text Text </p>
                     <p>Current Diagnos</p>
+                    <p>Text Text Text </p>
+                    <p>Text Text Text </p>
                     <p>Current Medication</p>
+                    <p>Text Text Text </p>
                 </div>
                 <div className="Timeline">
                     <h1>Timeline</h1>
@@ -39,15 +43,3 @@ function PatientsDetailPage() {
 }
 
 export default PatientsDetailPage;
-
-<div className="container">
-    <div className="Sidebar"></div>
-    <div className="PreviousNote"></div>
-    <div className="NewNote"></div>
-    <div className="PatientMainContent">
-        <div className="PatientInfos"></div>
-        <div className="Timeline"></div>
-        <div className="PatientName"></div>
-        <div className="PatientImage"></div>
-    </div>
-</div>
