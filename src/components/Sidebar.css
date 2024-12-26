@@ -12,6 +12,20 @@
     padding: 60px 0;
 }
 
+.sidebarPatient {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: grey;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
 .doctor-profile {
     text-align: center;
     margin: 20px 0;
