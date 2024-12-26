@@ -4,13 +4,13 @@ import doctorImage from '/src/assets/doctor.jpeg';
 import Button from "./Button.jsx";
 import PropTypes from 'prop-types';
 
-function Sidebar({ name = "Dr. Mustermann", image = doctorImage }) {
+function Sidebar() {
     return (
         <aside className="sidebar">
             {/* Doctor's Picture */}
             <div className="doctor-profile">
-                <img src={image} alt="profile-image" className="profile-image"/>
-                <h3>{name}</h3>
+                <img src={doctorImage} alt="profile-image" className="profile-image"/>
+                <h3>{"Dr. Mustermann"}</h3>
             </div>
 
             {/* Divider Line */}
