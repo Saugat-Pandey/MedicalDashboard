@@ -1,5 +1,5 @@
 import React from 'react';
-import './appointments.css';
+import './Appointments.css';
 import Sidebar from '../components/Sidebar';
 
 const appointments = [
@@ -17,7 +17,7 @@ function Appointments() {
         <div id="appointments-container">
             <Sidebar />
             <div className="appointments-content">
-                <h1>Today's Appointments</h1>
+                <h1>Today&apos;s Appointments</h1>
                 <div className="appointments-table">
                     <div className="appointments-header">
                         <span className="column-image"></span>
