@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar';
 import Calendar from 'react-calendar'
 import '/src/components/Calendar.css';
 import NumberDayPatients from "../components/NumberDayPatients.jsx";
-import TinyBarChart from '../components/BarChart.jsx';
+import TinyBarChart from '../components/barchart.jsx';
 import NextPatientDetails from "../components/NextPatientDetails.jsx";
 import AppointmentsForToday from "../components/AppointmentsForToday.jsx";
 

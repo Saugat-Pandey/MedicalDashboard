@@ -1,5 +1,5 @@
 import React from 'react';
-import './Appointments.css';
+import './appointments.css';
 import Sidebar from '../components/Sidebar';
 
 const appointments = [

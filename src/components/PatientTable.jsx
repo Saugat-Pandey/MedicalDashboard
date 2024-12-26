@@ -15,7 +15,7 @@ function PatientTable() {
     const navigate = useNavigate();
 
     const handleRowClick = (patient) => {
-        if (patient.FullName === "Selma Lepka") {
+        if (patient.FullName === "Selma Lepka" ) {
             navigate('/patients-detail');
         }
     };
