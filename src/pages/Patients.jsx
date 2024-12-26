@@ -8,7 +8,7 @@ function Patients() {
         <div id={"patients-container"}>
             <Sidebar/>
             <PatientTable/>
-
+            {/* Add content for the Patients page here */}
         </div>
     );
 }
