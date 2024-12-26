@@ -1,5 +1,5 @@
 import React from 'react';
-import './Patients.css';
+import './patients.css';
 import Sidebar from '../components/Sidebar';
 import PatientTable from "../components/PatientTable.jsx";
 
